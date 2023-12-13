@@ -3,6 +3,7 @@
   /* palette */
   --navbar-bg-color: black;
   --player-bg-color: #282828;
+  --text-spoty-color: #6c6f74;
   --body-bg-color: #141922;
   --upgrade-bg-color: #080b12;
   --text-primary-color: white;
@@ -20,7 +21,7 @@
 }
 
 body {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Montserrat", sans-serif;
   background-color: var(--body-bg-color);
   color: var(--text-primary-color);
 }
@@ -70,20 +71,84 @@ a {
   display: flex;
 }
 
-/* Footer */
-#app-player {
-  background-color: var(--player-bg-color);
-  height: 90px;
-}
-
 /* Navbar */
 #app-navbar {
   width: var(--navbar-width);
   background-color: var(--navbar-bg-color);
   flex-shrink: 0;
   height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.logo-spoty {
+  align-self: center;
+  padding: 40px;
+  width: 250px;
+}
+.home,
+.search,
+.library {
+  width: 50px;
+  padding-left: 15px;
+  padding-right: 5px;
+  padding-bottom: 15px;
+}
+.text-home,
+.text-search,
+.text-library {
+  display: flex;
+  align-items: center;
+  padding-left: 5px;
+  cursor: pointer;
+  color: var(--text-spoty-color);
+}
+.title-playlist {
+  padding-left: 20px;
+}
+.fa-square-plus {
+  font-size: 45px;
+  padding: 10px;
+  cursor: pointer;
+}
+.new-playlist {
+  color: var(--text-spoty-color);
+  display: flex;
+  align-items: center;
+  padding-left: 10px;
+  padding-top: 10px;
+}
+.playlist-name {
+  color: var(--text-spoty-color);
+  padding: 15px;
+}
+.install-app {
+  display: flex;
+  align-items: center;
+  margin-top: 60px;
+  padding-left: 5px;
 }
 
+.download {
+  width: 45px;
+  padding: 10px;
+  width: 40px;
+  cursor: pointer;
+}
+.line {
+  border: 1px solid var(--text-spoty-color);
+  width: 255px;
+  margin-left: 20px;
+}
+
+.profile {
+  display: flex;
+  align-items: center;
+}
+.profile-img {
+  width: 40px;
+  padding: 10px;
+  cursor: pointer;
+}
 /* Main */
 #app-main {
   flex-grow: 1;
@@ -97,10 +162,27 @@ a {
   top: 0;
   left: 0;
 }
-
-#main-content {
+.upgrade-button {
+  margin-top: 35px;
+  margin-left: 80%;
+  width: 240px;
+  padding: 15px;
+  border-radius: 30px;
+  background: none;
+  color: white;
+  border: 1px solid white;
+  cursor: pointer;
 }
 
+#main-content {
+  padding-top: 5px;
+}
+
+/* Footer */
+#app-player {
+  background-color: var(--player-bg-color);
+  height: 90px;
+}
 /* MEDIA */
 
 @media all and (min-width: 768px) {

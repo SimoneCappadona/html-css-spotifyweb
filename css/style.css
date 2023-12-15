@@ -221,6 +221,9 @@ a {
 .col {
   padding: 10px;
 }
+.col img {
+  width: 250px;
+}
 .hm,
 .sub {
   text-align: center;
@@ -235,12 +238,90 @@ a {
   text-align: center;
   padding: 5px;
 }
-
+.create-for {
+}
+.create-text {
+  padding-left: 45px;
+  padding-top: 30px;
+}
+.create-for p {
+  color: var(--text-spoty-color);
+  font-weight: bold;
+}
+.artist p {
+  color: var(--text-spoty-color);
+  font-weight: bold;
+}
+.rounded {
+  border-radius: 50%;
+}
 /* Footer */
 #app-player {
   background-color: var(--player-bg-color);
   height: 90px;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
+.song p {
+  font-weight: bold;
+  padding-left: 10px;
+  font-size: small;
+}
+.song {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.song-played {
+  width: 60px;
+}
+.fav-folder {
+  padding: 25px;
+  color: var(--text-spoty-color);
+  cursor: pointer;
+}
+.fa-heart {
+  padding-right: 10px;
+}
+.color-grey {
+  color: var(--text-spoty-color);
+}
+.fa-shuffle,
+.fa-backward-step,
+.fa-circle-play,
+.fa-forward-step,
+.fa-rotate-right {
+  padding: 10px;
+  font-size: 25px;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+.fa-bars,
+.fa-tv,
+.fa-volume-high {
+  padding: 10px;
+  font-size: 15px;
+  cursor: pointer;
+}
+.volume-bar {
+  display: flex;
+  align-items: center;
+}
+.progress-volume-bar {
+  border: 2px solid var(--text-spoty-color);
+  width: 40px;
+  height: 0;
+  border-radius: 10px;
+}
+.progress-volume-black-bar {
+  border: 2px solid var(--body-bg-color);
+  width: 60px;
+  height: 0;
+  border-radius: 10px;
+}
+
 /* MEDIA */
 
 @media all and (min-width: 768px) {

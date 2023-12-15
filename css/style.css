@@ -207,8 +207,12 @@ a {
   color: var(--text-spoty-color);
   cursor: pointer;
 }
-.green-bar-lower {
+.green-lower-bar {
   border-bottom: 3px solid var(--bar-color);
+  display: block;
+  width: 35px;
+  margin: 0 auto;
+  padding-top: 3px;
 }
 .rp {
   padding-left: 45px;
@@ -295,8 +299,35 @@ a {
 .fa-rotate-right {
   padding: 10px;
   font-size: 25px;
-  margin-bottom: 20px;
   cursor: pointer;
+}
+.progress-song-played {
+  display: flex;
+  align-items: center;
+}
+.play-button {
+  display: flex;
+  justify-content: center;
+}
+
+.progress-song-bar {
+  border: 2px solid var(--text-spoty-color);
+  width: 85px;
+  height: 0;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.progress-song-black-bar {
+  border: 2px solid var(--body-bg-color);
+  width: 250px;
+  height: 0;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.minutes {
+  padding: 10px;
+  font-size: 12px;
+  font-weight: bolder;
 }
 .fa-bars,
 .fa-tv,
@@ -314,6 +345,7 @@ a {
   width: 40px;
   height: 0;
   border-radius: 10px;
+  cursor: pointer;
 }
 .progress-volume-black-bar {
   border: 2px solid var(--body-bg-color);
